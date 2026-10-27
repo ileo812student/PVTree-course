@@ -1,0 +1,6 @@
+{
+  "preset": "mild",
+  "enabled_operators": ["noise"],
+  "retain_probability": 0.0,
+  "combination_probability": 0.0
+}

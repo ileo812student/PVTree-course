@@ -1,0 +1,30 @@
+{
+  "experiment_name": "pvtree_optical_ab",
+  "seed": 2026,
+  "group_A": {
+    "description": "Original PVTree/PCE images, copied through none mode for an auditable manifest",
+    "input": "pcemodel/results",
+    "output": "experiments/pvtree_A_none",
+    "augmentation_config": "configs/optical_none.json"
+  },
+  "group_B": {
+    "description": "The same images with mild optical perturbations",
+    "input": "pcemodel/results",
+    "output": "experiments/pvtree_B_mild",
+    "augmentation_config": "configs/optical_mild.json"
+  },
+  "recognition_protocol": {
+    "status": "not_available_in_this_repository",
+    "required_external_inputs": [
+      "recognition training/evaluation code",
+      "identity split",
+      "real held-out test set"
+    ],
+    "controls": [
+      "same recognizer initialization and training schedule",
+      "same recognition-time augmentation for A and B",
+      "same identity split and real held-out test set",
+      "do not tune optical strength on the test set"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "preset": "mild",
+  "enabled_operators": ["blur"],
+  "retain_probability": 0.0,
+  "combination_probability": 0.0
+}

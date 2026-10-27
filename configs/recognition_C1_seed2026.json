@@ -1,0 +1,32 @@
+{
+  "amp": true,
+  "arcface": {
+    "margin": 0.5,
+    "scale": 64.0
+  },
+  "augmentation": {
+    "rotation_degrees": 3.0
+  },
+  "batch_size": 128,
+  "checkpoint_selection": "lowest_dev_eer",
+  "dev_pairs": "datasets/casia_multi_940_roi/manifests/casia_dev_pairs.csv",
+  "embedding_dim": 256,
+  "epochs": 20,
+  "eval_batch_size": 128,
+  "image_size": 128,
+  "learning_rate": 0.0003,
+  "model": "resnet18",
+  "num_workers": 4,
+  "optimizer": "AdamW",
+  "output_dir": "experiments/pce_repro_final/recognition/seed_2026/C1",
+  "persistent_workers": true,
+  "pin_memory": true,
+  "require_cuda": true,
+  "run_name": "pce_repro_final_C1_seed2026",
+  "scheduler": "cosine",
+  "seed": 2026,
+  "test_pairs": "datasets/casia_multi_940_roi/manifests/casia_test_pairs.csv",
+  "train_root": "experiments/pce_repro_final/data/C1",
+  "warmup_epochs": 1,
+  "weight_decay": 0.0001
+}

@@ -1,0 +1,12 @@
+{
+  "preset": "mild",
+  "enabled_operators": ["illumination", "blur"],
+  "retain_probability": 0.42857142857142855,
+  "retain_per_identity": 3,
+  "combination_probability": 0.0,
+  "operator_weights": {
+    "illumination": 0.60,
+    "blur": 0.40,
+    "noise": 0.0
+  }
+}

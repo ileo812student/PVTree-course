@@ -1,0 +1,5 @@
+{
+  "preset": "mild",
+  "retain_probability": 0.30,
+  "combination_probability": 0.15
+}
