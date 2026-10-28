@@ -1,3 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+# Modified for PVTree-course; copyright 2026 PVTree-course contributors
+# applies to modifications only. Original authors retain their rights.
+# Upstream: Sunniva-Shang/PVTree-palmvein-generation, commit 5eaf80f.
+# Changes: stable traversal, explicit identity directories, per-path augmentation
+# seeds, and resume/overwrite guards.
 import os, shutil
 import cv2
 from PIL import Image

@@ -1,3 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+# Modified for PVTree-course; copyright 2026 PVTree-course contributors
+# applies to modifications only. Original authors retain their rights.
+# Upstream: Sunniva-Shang/PVTree-palmvein-generation, commit 5eaf80f.
+# Changes: pin the tested CUDA/Python dependencies and add course/test tools.
+# Each installed dependency retains its own license.
 --extra-index-url https://download.pytorch.org/whl/cu124
 
 torch==2.6.0+cu124

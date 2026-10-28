@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 PVTree-course contributors.
+# Course-project addition; see LICENSE for terms and README for upstream attribution.
 """Offline optical perturbations for PVTree / PCE-Palm grayscale outputs.
 
 The operators approximate acquisition-condition changes. They are deliberately

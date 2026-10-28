@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 PVTree-course contributors.
+# Course-project addition; see LICENSE for terms and README for upstream attribution.
 """Verify source/A/B image correspondence, hashes, formats and manifests."""
 
 from __future__ import annotations

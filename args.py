@@ -1,3 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+# Modified for PVTree-course; copyright 2026 PVTree-course contributors
+# applies to modifications only. Original authors retain their rights.
+# Upstream: Sunniva-Shang/PVTree-palmvein-generation, commit 5eaf80f.
+# Changes: configurable identity counts, paths, seeds, workers and safe resume;
+# accept explicit argv and correct floating-point argument types.
 import argparse
 
 def parse_args(argv=None):

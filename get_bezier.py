@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+# Modified for PVTree-course; copyright 2026 PVTree-course contributors
+# applies to modifications only. Original authors retain their rights.
+# Upstream: Sunniva-Shang/PVTree-palmvein-generation, commit 5eaf80f.
+# Changes: identity-bound seeds and explicit resume/overwrite controls.
 # generate palm print training data with bezier curves
 import bezier
 # import mmcv

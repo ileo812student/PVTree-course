@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+
 # PVTree 掌静脉合成与风格重分配课程项目
 
 基于开源 PVTree 与 PCE-Palm 的课程实验代码。项目先生成三维血管树及二维投影，
@@ -178,3 +180,46 @@ latent 一次性分配、CASIA ROI 工具及识别指标人工样例。
 - 保留原仓库的 Apache-2.0 [LICENSE](LICENSE) 与源代码中的原始声明。
 - 课程扩展包括离线光学扰动、latent 分配、路径级随机噪声控制、识别实验及回归测试；
   不将上游模型或算法声称为原创。使用与引用应遵守各上游项目和数据集的要求。
+
+### 许可范围与权利归属
+
+本仓库的课程新增源码、测试、配置及说明文档同样采用 **Apache License 2.0**，
+除非某文件已有另行声明。课程新增部分及修改部分的版权归相应课程贡献者所有
+（`Copyright 2026 PVTree-course contributors`）；这一声明不覆盖或转移上游代码的版权。
+原有版权、许可证和归属声明保留不变，不表示原作者认可或担保本课程扩展。
+
+使用者可在遵守 Apache-2.0 条件的前提下使用、修改和再分发，包括商业使用。
+再分发时须附带许可证、保留适用的原始声明，并在修改过的文件中显著说明修改；
+若相关上游分发包含 NOTICE，须按许可证要求保留其中适用的归属信息。
+代码按许可证约定以现状提供，不保证识别性能、适销性或特定用途适用性。
+
+以上许可仅针对仓库中相应的代码与文档，不自动授予 CASIA 等数据集、预训练权重、
+论文图片、商标或外部依赖的使用和再分发权利；它们应分别遵守自身条款。
+课程实验或学术使用仍应引用实际使用的原始工作。
+
+### 上游修改声明
+
+本 README 已由 PVTree-course 贡献者于 2026 年改写，增加课程介绍、源码结构、
+复现入口与许可说明，不是上游原版 README。
+源码对照基线为 PVTree 上游提交
+[`5eaf80fab1ee8a263dde990e6c6dd561bccfceee`](https://github.com/Sunniva-Shang/PVTree-palmvein-generation/commit/5eaf80fab1ee8a263dde990e6c6dd561bccfceee)。
+2026-10-28 补充以下修改文件的显著声明；该次补充不改变算法、配置或实验结果：
+
+| 修改文件 | 相对上游的课程改动 |
+|---|---|
+| `args.py` | 生成数量、路径、种子、并行和恢复参数；浮点类型及显式 argv |
+| `data_tools.py` | 稳定遍历、身份子目录、路径级增强种子和覆盖保护 |
+| `get_bezier.py` | 身份级种子、恢复和覆盖保护 |
+| `main.py` | 可复现身份生成、投影恢复、可配置并行及配置/状态记录 |
+| `pcemodel/options/test_options.py` | 推理种子和恢复选项 |
+| `pcemodel/run_gen.sh` | 入口路径解析及严格错误处理 |
+| `pcemodel/run_vein.sh` | 输入检查、路径适配、输出/种子/GPU 参数和恢复支持 |
+| `pcemodel/test.py` | 种子、可选 eval、latent dtype、尾组处理及输出保护 |
+| `requirements.txt` | 锁定验证环境版本并补充课程依赖 |
+| `README.md` | 重写为课程源码提交版的项目、使用与许可说明 |
+
+其他课程新增文件包括 `optical_perturb.py`、`verify_optical_ab.py`、
+`style_reassignment.py`、`casia_prepare.py`、`pcemodel/style_generate.py`、
+`recognition/`、`configs/`、`tests/`、`.gitignore` 和 `pytest.ini`。
+这些是相对上述 PVTree 基线的课程新增实现或配置，不表示其中涉及的基础算法、
+ResNet、ArcFace 或所调用的第三方库是课程原创。

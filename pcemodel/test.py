@@ -1,3 +1,10 @@
+# SPDX-License-Identifier: Apache-2.0
+# Modified for PVTree-course; copyright 2026 PVTree-course contributors
+# applies to modifications only. Original authors retain their rights.
+# Upstream: Sunniva-Shang/PVTree-palmvein-generation, commit 5eaf80f;
+# the upstream PCE implementation is based on Ukuer/PCE-Palm.
+# Changes: seeded inference, optional eval, float32 latent inputs, incomplete
+# final-group handling, preserved output paths and resume/overwrite guards.
 import os
 from options.test_options import TestOptions
 from data import create_dataset

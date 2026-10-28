@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: Apache-2.0
+# Modified for PVTree-course; copyright 2026 PVTree-course contributors
+# applies to modifications only. Original authors retain their rights.
+# Upstream: Sunniva-Shang/PVTree-palmvein-generation, commit 5eaf80f.
+# Changes: working-directory independence, input validation, configurable output,
+# seed/GPU selection, resume support, quoting and strict shell error handling.
 set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

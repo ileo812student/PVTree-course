@@ -1,3 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+# Modified for PVTree-course; copyright 2026 PVTree-course contributors
+# applies to modifications only. Original authors retain their rights.
+# Upstream: Sunniva-Shang/PVTree-palmvein-generation, commit 5eaf80f.
+# Changes: deterministic identity/projection generation, safe resume, configurable
+# paths/counts/workers, multiprocessing, and generation configuration/status logs.
 import numpy as np
 from matplotlib import pyplot as plt
 from tqdm import tqdm

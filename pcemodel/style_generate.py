@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 PVTree-course contributors.
+# Course-project addition; see LICENSE for terms and README for upstream attribution.
 """Generate PCE images from an explicit, hashed input/latent assignment manifest."""
 
 from __future__ import annotations
